@@ -1,0 +1,75 @@
+﻿<Window x:Class="AutoServise_shrbk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoServise_shrbk"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFF3F7FA" WindowStartupLocation="CenterScreen" Foreground="#FF024D8C">
+    <Grid>
+        <Button Style="{DynamicResource ButtonStyle}"
+            Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+            x:Name="btn_back"
+            Content="⮨"
+            FontSize="30"
+            Width="40"
+            Height="40"           
+            Padding="-10"
+                VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin=" 25 25 0 0"  BorderThickness="1,1,1,1" Click="btn_back_Click" 
+            >
+
+        </Button>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="btn_clientList"
+                Width="180"
+                Height="50" Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+                Content="Список клиентов"
+                FontSize="16" 
+                Margin="10 0 0 0" Click="btn_clientList_Click"
+                >
+            </Button>
+            <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="btn_employeeList"
+                Width="180"
+                Height="50" Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+                Content="Список сотрудников"
+                FontSize="16" 
+                Margin="10 0 0 0" Click="btn_employeeList_Click"
+                >
+            </Button>
+            <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="btn_serviceList"
+                Width="180"
+                Height="50" Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+                Content="Список услуг"
+                FontSize="16" 
+                Margin="10 0 0 0" Click="btn_serviceList_Click"
+                >
+            </Button>
+            <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="btn_order"
+                Width="180"
+                Height="50" Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+                Content="Оказать услугу"
+                FontSize="16" 
+                Margin="10 0 0 0" Click="btn_order_Click"
+                >
+            </Button>
+        </StackPanel>
+        <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="btn_reports"
+                Width="180"
+                Height="50" Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+                Content="Отчетность"
+                FontSize="16" 
+                Margin="0 0 0 30"
+                VerticalAlignment="Bottom" Click="btn_reports_Click"
+                >
+        </Button>
+    </Grid>
+</Window>

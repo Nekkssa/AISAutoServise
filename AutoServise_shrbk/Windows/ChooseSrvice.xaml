@@ -1,0 +1,72 @@
+﻿<Window x:Class="AutoServise_shrbk.Windows.ChooseSrvice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoServise_shrbk.Windows"
+        mc:Ignorable="d"
+        Title="ChooseSrvice" Height="450" Width="800" Background="#FFF3F7FA" WindowStartupLocation="CenterScreen" Foreground="#FF024D8C">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Style="{DynamicResource ButtonStyle}"
+            Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+            x:Name="btn_back"
+            Content="⮨"
+            FontSize="30"
+            Width="40"
+            Height="40"           
+            Padding="-10"
+            HorizontalAlignment="Left"
+            Margin=" 25 0 0 0"  BorderThickness="1,1,1,1" Click="btn_back_Click" 
+            >
+
+        </Button>
+        <TextBlock
+            Text="Список услуг"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="20"
+            />
+        <WrapPanel
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >
+            <TextBlock
+                Text="Поиск"
+                FontSize="16"
+                Margin="10 0"/>
+            <TextBox
+                x:Name="tb_search"
+                Width="200"
+                FontSize="16"
+                Margin="10 0"
+                Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C" BorderThickness="0,0,0,2" TextChanged="tb_search_TextChanged"
+                />
+        </WrapPanel>
+        <ListView
+            Grid.Row="2"
+            x:Name="lv_service"
+            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+            HorizontalContentAlignment="Center" MouseDoubleClick="lv_service_MouseDoubleClick" 
+            >
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Код" Width="40" DisplayMemberBinding="{Binding ID}"/>
+                    <GridViewColumn Header="Название" Width="200" DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn Header="Цена" Width="100" DisplayMemberBinding="{Binding Cost}"/>
+                    <GridViewColumn Header="Описание" Width="100" DisplayMemberBinding="{Binding Description}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

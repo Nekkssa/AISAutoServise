@@ -1,0 +1,61 @@
+﻿<Window x:Class="AutoServise_shrbk.Windows.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoServise_shrbk.Windows"
+        mc:Ignorable="d"
+        Title="Authorization" Height="500" Width="400" Background="#FFF3F7FA" WindowStartupLocation="CenterScreen" Foreground="#FF024D8C">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="25"
+                Margin=" 0 50 0 0"
+                Text="Авторизация">
+                
+            </TextBlock>
+            <TextBox
+                Width="250"
+                Height="30"
+                FontSize="20" 
+                Background="{x:Null}"
+                BorderBrush="#FF024D8C" 
+                SelectionBrush="#FF337DBB"
+                Foreground="#FF024D8C" 
+                BorderThickness="0,0,0,2"
+                Text="Логин"
+                Margin="0 80 0 0"
+                x:Name="tb_login" PreviewMouseLeftButtonDown="tb_login_PreviewMouseLeftButtonDown"
+                
+                >
+                
+            </TextBox>
+            <PasswordBox
+                Width="250"
+                Height="30"
+                FontSize="20" 
+                Background="{x:Null}"
+                BorderBrush="#FF024D8C" 
+                SelectionBrush="#FF337DBB"
+                Foreground="#FF024D8C" 
+                BorderThickness="0,0,0,2"
+                Margin="0 80 0 0"
+                x:Name="tb_pas"
+                Password="Пароль" PreviewMouseLeftButtonDown="tb_pas_PreviewMouseLeftButtonDown"
+                >
+
+            </PasswordBox>
+            <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="btn_enter"
+                Width="220"
+                Height="60" Background="#00000000" BorderBrush="#FF024D8C" Foreground="#FF024D8C"
+                Content="Войти"
+                FontSize="20" 
+                Margin="0 80 0 0" Click="btn_enter_Click"
+                >
+
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
