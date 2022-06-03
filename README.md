@@ -73,32 +73,31 @@
 ![image](https://user-images.githubusercontent.com/94114655/171883053-3a61be0d-0537-499e-98ce-5c927fa2d2f0.png)
 
 
-<br><br>
+<br>Окно со списком оказанных услуг за время работы сервиса. <br>
 ![image](https://user-images.githubusercontent.com/94114655/171883557-90ea6f0f-7c05-48d7-aaf2-7d9ff32f58b0.png)
 
-<br><br>
-![image](https://user-images.githubusercontent.com/94114655/171883302-b4ac3e05-f9ba-41ee-bfd3-974a7da0d238.png)
+<br>Проверка фильтрации и поисковой строке:<br>
 ![image](https://user-images.githubusercontent.com/94114655/171883324-5b681d1f-9bdd-4dbd-bf5d-20101bc39316.png)
 ![image](https://user-images.githubusercontent.com/94114655/171883339-6a067d7e-9df0-43a3-a099-b27c6e4c9a8a.png)
 ![image](https://user-images.githubusercontent.com/94114655/171883354-914a9968-2f8e-49e3-9864-49921d6578fa.png)
 ![image](https://user-images.githubusercontent.com/94114655/171883368-bee5fed3-c2d9-4488-8cf2-d0a0993da7ad.png)
 
 
-<br><br>
+<br>Добавление записи об услуге. Чтобы добавить запись, необходимо выбрать клиента, которому будет предоставлена услуга; сотрудника, который будет исполнять услугу, дату записи и наименование услуги. После внесения данных, встроенный в программу калькулятор считает стоимость оказания услуги<br>
 ![image](https://user-images.githubusercontent.com/94114655/171883708-0ef28ee5-6f3a-41d3-8d16-d8d792ce5186.png)
 ![image](https://user-images.githubusercontent.com/94114655/171883763-d74c8f39-cc2f-4f15-898f-01e849a85dff.png)
 ![image](https://user-images.githubusercontent.com/94114655/171883805-65b36d05-2f44-47d7-bb86-a92040bb578a.png)
 
-<br><br>
+<br>Добавленная запись сразу отображается в списке и в базе данных.<br>
 ![image](https://user-images.githubusercontent.com/94114655/171883946-f6b5042f-9ff7-4784-8941-700214d74935.png)
+![image](https://user-images.githubusercontent.com/94114655/171887895-65560209-2ec9-4953-95e6-1b2d72db5f9d.png)
 
-<br><br>
+
+<br>Окно отчётности. В нём содержится информация о выполнении услуг за выбранный период времени. Калькулятор автоматически высчитывает выручку. <br>
 ![image](https://user-images.githubusercontent.com/94114655/171884031-d644a7a8-ec54-499d-80f5-9459bc324026.png)
 
-<br><br>
+<br>Реализация базы даннных для АИС:<br>
 ![image](https://user-images.githubusercontent.com/94114655/171884406-e7b85f08-4d21-4b6e-aa44-25440e5147ae.png)
 ![image](https://user-images.githubusercontent.com/94114655/171884426-1da1bbfe-51df-4ece-bdb5-b8ae45d4921f.png)
 
 
-<br><br>
-<br><br>
